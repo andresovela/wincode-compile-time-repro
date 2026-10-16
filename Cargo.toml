@@ -1,0 +1,18 @@
+[package]
+name = "wincode-schema-read-repro"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+[workspace]
+
+[dependencies]
+wincode = { version = "=0.6.3", features = ["derive"] }
+
+[features]
+manual = []
+field-bounds = []
+deep = []
+
+[profile.dev]
+incremental = false

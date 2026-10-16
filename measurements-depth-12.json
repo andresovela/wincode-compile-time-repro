@@ -1,0 +1,197 @@
+{
+  "recorded_at": "2026-10-16T14:42:59.370173+00:00",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "depth": 12,
+  "method": "Sequential cargo check; incremental off; dependencies warm; source touched per run. Unit time excludes dependencies and Cargo overhead.",
+  "runs": [
+    {
+      "mode": "derive",
+      "repeat": 1,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline"
+      ],
+      "wall_seconds": 2.781747273002111,
+      "unit_seconds": 2.76,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 2.76
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 2.76,
+            "end": 2.76
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "field-bounds",
+      "repeat": 1,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "field-bounds"
+      ],
+      "wall_seconds": 2.7382872399975895,
+      "unit_seconds": 2.72,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 2.71
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 2.71,
+            "end": 2.72
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "scalar-bound",
+      "repeat": 1,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "manual"
+      ],
+      "wall_seconds": 1.2887634149992664,
+      "unit_seconds": 1.27,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 1.27
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 1.27,
+            "end": 1.27
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "scalar-bound",
+      "repeat": 2,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "manual"
+      ],
+      "wall_seconds": 1.3036680140030512,
+      "unit_seconds": 1.28,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 1.28
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 1.28,
+            "end": 1.28
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "field-bounds",
+      "repeat": 2,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "field-bounds"
+      ],
+      "wall_seconds": 2.7397904040008143,
+      "unit_seconds": 2.72,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 2.71
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 2.71,
+            "end": 2.72
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "derive",
+      "repeat": 2,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline"
+      ],
+      "wall_seconds": 2.7646257449996483,
+      "unit_seconds": 2.74,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 2.74
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 2.74,
+            "end": 2.74
+          }
+        ]
+      ]
+    }
+  ]
+}

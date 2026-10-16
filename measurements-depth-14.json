@@ -1,0 +1,201 @@
+{
+  "recorded_at": "2026-10-16T14:43:14.323856+00:00",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "depth": 14,
+  "method": "Sequential cargo check; incremental off; dependencies warm; source touched per run. Unit time excludes dependencies and Cargo overhead.",
+  "runs": [
+    {
+      "mode": "derive",
+      "repeat": 1,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "deep"
+      ],
+      "wall_seconds": 33.16930744699857,
+      "unit_seconds": 33.15,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 33.14
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 33.14,
+            "end": 33.15
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "field-bounds",
+      "repeat": 1,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "field-bounds,deep"
+      ],
+      "wall_seconds": 32.66880552300063,
+      "unit_seconds": 32.65,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 32.64
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 32.64,
+            "end": 32.65
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "scalar-bound",
+      "repeat": 1,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "manual,deep"
+      ],
+      "wall_seconds": 9.87567483499879,
+      "unit_seconds": 9.86,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 9.85
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 9.85,
+            "end": 9.86
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "scalar-bound",
+      "repeat": 2,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "manual,deep"
+      ],
+      "wall_seconds": 9.784947497999383,
+      "unit_seconds": 9.76,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 9.76
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 9.76,
+            "end": 9.76
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "field-bounds",
+      "repeat": 2,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "field-bounds,deep"
+      ],
+      "wall_seconds": 32.50023051199969,
+      "unit_seconds": 32.48,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 32.47
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 32.47,
+            "end": 32.48
+          }
+        ]
+      ]
+    },
+    {
+      "mode": "derive",
+      "repeat": 2,
+      "command": [
+        "cargo",
+        "check",
+        "--lib",
+        "--locked",
+        "--timings",
+        "--offline",
+        "--features",
+        "deep"
+      ],
+      "wall_seconds": 32.32728271999804,
+      "unit_seconds": 32.31,
+      "sections": [
+        [
+          "frontend",
+          {
+            "start": 0.0,
+            "end": 32.3
+          }
+        ],
+        [
+          "codegen",
+          {
+            "start": 32.3,
+            "end": 32.31
+          }
+        ]
+      ]
+    }
+  ]
+}
